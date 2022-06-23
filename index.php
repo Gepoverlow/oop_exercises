@@ -12,6 +12,7 @@ if(isset($_GET['page'])){
         default :
             echo 'hmmm give me a page sicco';
     };
-
-
 }
+
+$drink = new Beverage("Orange", 2);
+$drink->getBeverageInfo();
