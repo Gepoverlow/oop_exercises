@@ -9,7 +9,7 @@ class Beverage {
     public string $temperature;
 
 
-    function __construct(string $color, float $price){
+    function __construct(string $color, float $price,){
 
     $this->color = $color;
     $this->price = $price;
@@ -18,7 +18,28 @@ class Beverage {
 
     function getBeverageInfo(){
 
-     echo "This beverage is $this->temperature and $this->color.";
+     return "This beverage is $this->temperature and $this->color.";
+
+    }
+
+}
+
+class Beer extends Beverage{
+
+    public string $name;
+    public float $alcoholPercentage;
+
+    function __construct(string $color, float $price, string $name, float $alcoholPerc){
+
+    parent::__construct($color, $price);
+    $this->name = $name;
+    $this->alcoholPercentage = $alcoholPerc;
+
+    }
+
+    function getAlcoholPercentage(){
+
+    return $this->alcoholPercentage;
 
     }
 
