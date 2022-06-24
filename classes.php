@@ -5,8 +5,8 @@ declare(strict_types=1);
 class Beverage {
 
     protected string $color;
-    protected float $price;
-    protected string $temperature;
+    private float $price;
+    private string $temperature;
 
 
     function __construct(string $color, float $price,){
@@ -16,19 +16,19 @@ class Beverage {
     $this->temperature = "Cold";
     }
 
-    function getBeverageInfo(){
+    public function getBeverageInfo() : string{
 
      return "This beverage is $this->temperature and $this->color.";
 
     }
 
-    function setColor($newColor){
+    public function setColor( string$newColor){
 
     $this->color = $newColor;
     
     }
 
-    function getColor(){
+    public function getColor() : string{
 
     return $this->color; 
 
@@ -38,8 +38,8 @@ class Beverage {
 
 class Beer extends Beverage{
 
-    protected string $name;
-    protected float $alcoholPercentage;
+    private string $name;
+    private float $alcoholPercentage;
 
     function __construct(string $color, float $price, string $name, float $alcoholPerc){
 
@@ -49,19 +49,28 @@ class Beer extends Beverage{
 
     }
 
-    function getAlcoholPercentage(){
+    public function getAlcoholPercentage() : float{
 
     return $this->alcoholPercentage;
 
     }
 
-    function getBeerInfo(){
+    private function getBeerInfo() : string{
 
     return "Hi i'm $this->name and have an alcochol percentage of $this->alcoholPercentage and I have a $this->color color."; 
         
     }
 
+    public function printBeerInfo() : string {
+
+    return $this->getBeerInfo();
+
+    }
+
 }
+
+
+
 
 
 
