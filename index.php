@@ -5,23 +5,31 @@ if(isset($_GET['page'])){
     switch($_GET['page']) {
         case 'classes' :
             require 'classes.php';
-            // Exercise One:
+            // //Exercise One:
             // $drink = new Beverage("Black", 2);
             // echo $drink->getBeverageInfo();
 
-            //Exercise Two:
+            // //Exercise Two:
             // $duvel = new Beer("Blonde", 3.5, "Duvel", 8.5);
             // echo $duvel->getAlcoholPercentage();
             // echo "<br/>" . $duvel->alcoholPercentage;
             // echo "<br/>" . $duvel->getBeverageInfo();
 
-            //Exercise Three:
-             $duvel = new Beer("Blonde", 3.5, "Duvel", 8.5);
+            // //Exercise Three:
+            // $duvel = new Beer("Blonde", 3.5, "Duvel", 8.5);
+            // echo $duvel->getAlcoholPercentage();
+            // echo "<br/>" . $duvel->getBeverageInfo();
+            // $duvel->setColor("light");
+            // echo "<br/>" . $duvel->getBeverageInfo();
+            // echo "<br/>" . $duvel->getBeerInfo();
+
+            // //Exercise Four:
+            $duvel = new Beer("Blonde", 3.5, "Duvel", 8.5);
             echo $duvel->getAlcoholPercentage();
             echo "<br/>" . $duvel->getBeverageInfo();
             $duvel->setColor("light");
             echo "<br/>" . $duvel->getBeverageInfo();
-            echo "<br/>" . $duvel->beerInfo();
+            echo "<br/>" . $duvel->getBeerInfo();
             break;
         case 'extending' :
             require 'extending.php';
