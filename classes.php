@@ -18,7 +18,7 @@ class Beverage {
 
     public function getBeverageInfo() : string{
 
-     return "This beverage is $this->temperature and $this->color.";
+     return "This beverage is $this->temperature, $this->color and costs € $this->price ";
 
     }
 
@@ -34,12 +34,28 @@ class Beverage {
 
     }
 
+    public function changePrice(float $newPrice) : string{
+
+    if($newPrice > 0){
+
+    $this->price = $newPrice;
+
+    return "Price succesfully changed to € $this->price";
+
+    } else {
+
+    return "No free beverages today!";
+
+    }
+
+    }
+
 }
 
 class Beer extends Beverage{
 
-    protected string $name;
-    protected float $alcoholPercentage;
+    private string $name;
+    private float $alcoholPercentage;
 
     function __construct(string $color, float $price, string $name, float $alcoholPerc){
 
