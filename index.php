@@ -40,7 +40,15 @@ if(isset($_GET['page'])){
             //  echo "<br/>" . $drink->getBeverageInfo();
 
             //Exercise Six:
-            
+            define("BARNAME", "Het Vervolg");
+            echo BARNAME;
+            $drink = new Beverage("Black", 2);
+            echo "<br/>" . $drink->getBarname();
+
+            $duvel = new Beer("Blonde", 3.5, "Duvel", 8.5);
+            echo "<br/>" . $duvel->getBarname();
+
+
 
 
             break;

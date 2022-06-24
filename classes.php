@@ -50,6 +50,12 @@ class Beverage {
 
     }
 
+    public function getBarname() : string{
+
+    return BARNAME;
+    
+    }
+
 }
 
 class Beer extends Beverage{
