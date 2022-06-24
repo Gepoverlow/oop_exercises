@@ -16,12 +16,12 @@ if(isset($_GET['page'])){
             // echo "<br/>" . $duvel->getBeverageInfo();
 
             // //Exercise Three:
-            $duvel = new Beer("Blonde", 3.5, "Duvel", 8.5);
-            echo $duvel->getAlcoholPercentage();
-            echo "<br/>" . $duvel->getBeverageInfo();
-            $duvel->setColor("light");
-            echo "<br/>" . $duvel->getBeverageInfo();
-            echo "<br/>" . $duvel->printBeerInfo();
+            // $duvel = new Beer("Blonde", 3.5, "Duvel", 8.5);
+            // echo $duvel->getAlcoholPercentage();
+            // echo "<br/>" . $duvel->getBeverageInfo();
+            // $duvel->setColor("light");
+            // echo "<br/>" . $duvel->getBeverageInfo();
+            // echo "<br/>" . $duvel->printBeerInfo();
 
             // //Exercise Four:
             // $duvel = new Beer("Blonde", 3.5, "Duvel", 8.5);
@@ -29,7 +29,7 @@ if(isset($_GET['page'])){
             // echo "<br/>" . $duvel->getBeverageInfo();
             // $duvel->setColor("light");
             // echo "<br/>" . $duvel->getBeverageInfo();
-            // echo "<br/>" . $duvel->getBeerInfo();
+            // echo "<br/>" . $duvel->printBeerInfo();
 
             break;
         case 'extending' :

@@ -5,8 +5,8 @@ declare(strict_types=1);
 class Beverage {
 
     protected string $color;
-    private float $price;
-    private string $temperature;
+    protected float $price;
+    protected string $temperature;
 
 
     function __construct(string $color, float $price,){
@@ -38,8 +38,8 @@ class Beverage {
 
 class Beer extends Beverage{
 
-    private string $name;
-    private float $alcoholPercentage;
+    protected string $name;
+    protected float $alcoholPercentage;
 
     function __construct(string $color, float $price, string $name, float $alcoholPerc){
 
